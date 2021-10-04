@@ -1,8 +1,6 @@
-a, b, c = int(input().split())
-
-multiple = range(((a - 1) // c + 1) * c, b, c)
-
-if not multiple:
-    print(-1)
-elif a <= multiple[0] <= b:
-    print(multiple[0])
+A, B, C = map(int, input().split())
+for i in range(A, B+1):
+    if i%C == 0:
+        print(i)
+        exit()
+print(-1)
