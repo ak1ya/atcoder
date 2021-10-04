@@ -1,6 +1,6 @@
-A, B, C = map(int, input().split())
-for i in range(A, B+1):
-    if i%C == 0:
+a, b, c = map(int, input().split())
+for i in range(a, b+1):
+    if i%c == 0:
         print(i)
         exit()
 print(-1)
